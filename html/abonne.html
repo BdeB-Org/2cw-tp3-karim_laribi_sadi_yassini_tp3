@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAMINGZ</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">\
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./../index.html" style="color: red;">STREAMINGZ</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/Index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/films.html">films</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/genres.html">Genres</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/abonne.html">Abonnés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/realisateur.html">realisateur</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="text-center mb-4" style="color: white;">Liste des Abonnés</h1>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <input type="text" id="search-nom" class="form-control" placeholder="Rechercher par nom">
+            </div>
+            <div class="col-md-4">
+                <input type="date" id="search-date-naissance" class="form-control" placeholder="Rechercher par date de naissance">
+            </div>
+            <div class="col-md-4">
+                <button id="search-button" class="btn btn-primary btn-block" style="background-color: red" style="color: white;">Rechercher</button>
+            </div>
+        </div>
+        <div id="abonne-list" class="row"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/Javascript/abonne.js"> </script>
+</body>
+
+</html>
