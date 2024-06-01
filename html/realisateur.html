@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAMINGZ - Réalisateurs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/Javascript/réalisateurs,js"> </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">STREAMINGZ</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/Index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/films.html">Films</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/abonne.html">Abonné</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/genres.html">Genres</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/visionnement.html">Visionnement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/realisateur.html">Réalisateurs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="text-center mb-4" style="color: rgb(255, 0, 0);"> Recherche de Réalisateurs </h1>
+        
+        <section id="realisateurs" class="mb-4">
+            
+            <div class="row mb-4">
+                <div class="col-md-3">Nom
+                    <input type="text" id="search-nom-prenom" class="form-control" placeholder="Rechercher par nom/prénom">
+                </div>
+                <div class="col-md-3">Date de naissance
+                    <input type="date" id="search-date-naissance" class="form-control" placeholder="Date de naissance">
+                </div>
+                <div class="col-md-3"> Date de décès
+                    <input type="date" id="search-date-deces" class="form-control" placeholder="Date de décès">
+                </div>
+                <div class="col-md-3">
+                    <button id="search-button" class="btn btn-primary btn-block">Rechercher</button>
+                </div>
+            </div>
+            <div id="realisateurs-list" class="row"></div>
+        </section>
+
+        <footer class="text-center">
+            <p> 2024 STREAMINGZ. Tous droits réservés aux grands maîtres du HTML et CSS, Karim et Sadi</p>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
