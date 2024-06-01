@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAMINGZ - Films par Genre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/Javascript/genres.js"> </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">STREAMINGZ</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/Index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/films.html">Films</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/abonne.html">Abonné</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/genres.html">Genres</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/visionnement.html">Visionnement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/realisateur.html">Réalisateurs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="text-center mb-4" style="color: rgb(255, 0, 0);">Recherche de Films par Genre</h1>
+        
+        <section id="films" class="mb-4">
+            <h2>Genre</h2>
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <select id="search-genre" class="form-control">
+                        <option value="">Sélectionner un genre</option>
+                        <option value="Action">Action</option>
+                        <option value="Drame">Drame</option>
+                        <option value="Comédie">Comédie</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Aventure">Aventure</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button id="search-button" class="btn btn-primary btn-block">Rechercher</button>
+                </div>
+            </div>
+            <div id="films-list" class="row"></div>
+        </section>
+
+        <footer class="text-center">
+            <p> 2024 STREAMINGZ. Tous droits réservés aux grands maîtres du HTML et CSS, Karim et Sadi</p>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
